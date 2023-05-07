@@ -1,6 +1,6 @@
 FROM debian:stable
 
-RUN apt-get update && apt-get -y install git curl unzip
+RUN apt-get update && apt-get -y install git curl unzip cmake
 
 RUN apt-get autoremove -y \
     && apt-get clean -y \
@@ -14,6 +14,3 @@ ENV PATH="/home/codespace/flutter/bin:$PATH"
 
 RUN git clone https://github.com/flutter/flutter && \
     /home/codespace/flutter/bin/flutter config --enable-web
-
-RUN apt update -y \
-    && apt install cmake
