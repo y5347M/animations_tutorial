@@ -17,6 +17,7 @@ class AnimatedLogo extends AnimatedWidget {
       child: Opacity(
         opacity: _opacityTween.evaluate(animation),
         child: Container(
+          decoration: const BoxDecoration(color: Colors.pink),
           margin: const EdgeInsets.symmetric(vertical: 10),
           height: _sizeTween.evaluate(animation),
           width: _sizeTween.evaluate(animation),

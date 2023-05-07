@@ -1,7 +1,6 @@
 {
-    "image": "cirrusci/flutter:beta",
+    "image": "ghcr.io/cirruslabs/flutter:3.10.0-1.3.pre",
     "forwardPorts": [3000],
-	"name": "Flutter",
 	"customizations": {
         "vscode": {
             "extensions": [
